@@ -1,0 +1,122 @@
+---
+title: "Problem set 1"
+linktitle: "Problem set 1"
+date: "2020-09-07"
+due_date: "2020-09-07"
+due_time: "11:59 PM"
+menu:
+  assignment:
+    parent: Problem sets
+    weight: 1
+type: docs
+weight: 1
+editor_options: 
+  chunk_output_type: console
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p><strong>Submit this as a PDF on iCollege.</strong> Show your work when possible.</p>
+<div id="section" class="section level2">
+<h2>1</h2>
+<p>Download this dataset (Source: <a href="https://jackblun.github.io/Globalinc/">Global Consumption and Income Project</a>. All incomes expressed in 2005 USD PPP.)</p>
+<ul>
+<li><a href="/files/gcip_raw.xlsx"><i class="fas fa-file-excel"></i> <code>gcip_raw.xlsx</code></a></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Choose five countries you are interested in.</li>
+<li>For each of these countries, calculate the 90/10 ratio for 1980, 1990, 2000, and 2014. Look at the <a href="https://www.core-econ.org/espp/book/text/01.html#exercise-12-using-excel-income-data-and-the-richpoor-ratio">step-by-step instructions in ESPP</a>.</li>
+<li>Include a table of these ratios in your problem set. Try plotting all four ratios for all five countries at the same time too and include that graph.</li>
+<li>Speculate about country- and time-based differences between these countries. <strong>Answer in ≈50 words.</strong></li>
+</ol>
+</div>
+<div id="section-1" class="section level2">
+<h2>2</h2>
+<p>Download this dataset (Source: ESPP. All numbers expressed in 1990 international USD (i.e. they’re all real values; you don’t need to adjust for inflation or anything)):</p>
+<ul>
+<li><a href="/files/global_income_raw.xlsx"><i class="fas fa-file-excel"></i> <code>global_income_raw.xlsx</code></a></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Calculate the compound annual growth rate for China, Britain, Italy, and India for the years 1750–1850, 1851–1950, and 1951–2014.</li>
+<li>Include a table of these growth rates and try to plot them somehow.</li>
+<li>Explain why you need to calculate the compound annual growth rate. <strong>Answer in a sentence.</strong></li>
+<li>Discuss the results. Which countries grew the most in which 100-year periods? Speculate about why. <strong>Answer in ≈75 words.</strong></li>
+</ol>
+</div>
+<div id="section-2" class="section level2">
+<h2>3</h2>
+<p>The following table shows the nominal GDP (in 2015 US dollars) and the population of Japan in 2013 and 2014 (Source: <a href="https://data.worldbank.org/">The World Bank</a>):</p>
+<table style="width:85%;">
+<colgroup>
+<col width="18%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Measure</th>
+<th align="left">2013</th>
+<th align="left">2014</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">GDP</td>
+<td align="left">$4,919,563,108,372.50</td>
+<td align="left">$4,601,461,206,885.10</td>
+</tr>
+<tr class="even">
+<td align="left">Population</td>
+<td align="left">127,338,621</td>
+<td align="left">127,131,800</td>
+</tr>
+</tbody>
+</table>
+<p>Based on this information, which of the following statements regarding GDP per capita is correct? <strong>Explain why or why not in a sentence for each</strong>:</p>
+<ol style="list-style-type: decimal">
+<li>The GDP per capita in 2013 was $36,194.41.</li>
+<li>The GDP per capita fell by 6.74% between 2013 and 2014.</li>
+<li>The fall in the population was enough to offset the fall in the GDP for an overall growth in GDP per capita between 2013 and 2014.</li>
+<li>The GDP per capita fell by 6.31% between 2013 and 2014.</li>
+</ol>
+</div>
+<div id="section-3" class="section level2">
+<h2>4</h2>
+<ol style="list-style-type: decimal">
+<li>The consumer price index (1982–84 = 100) in December 1980 was 86.4, and it was 247.963 in December 2017 (Source: <a href="https://fred.stlouisfed.org/series/CPIAUCSL"><code>CPIAUCSL</code> from FRED</a>). How much inflation has there been between 1980 and 2017?</li>
+<li>In December 1980 the average price of unleaded regular gasoline was <span>$1.34</span>; in December 2017, it was <span>$2.48</span>. (Source: <a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&amp;s=EMM_EPMR_PTE_NUS_DPG&amp;f=W">Weekly U. S. Regular All Formulations Retail Gasoline Prices</a> from the US EIA.) Did the price of gasoline increase or decrease in real terms over this period? By what percentage has the price of gasoline changed (in real terms) over this period? What is the implied average annual rate of growth or decline in the real price over this period?</li>
+<li>In 1980 the federal minimum wage was <span>$3.10</span> per hour; today it is <span>$7.25</span>. Has its real value increased or decreased over this period? What policy and managerial implications does this have?</li>
+</ol>
+</div>
+<div id="section-4" class="section level2">
+<h2>5</h2>
+<p>Download this dataset:</p>
+<ul>
+<li><a href="/files/fred_gdp.xlsx"><i class="fas fa-file-excel"></i> <code>fred_gdp.xlsx</code></a></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Calculate the nominal GDP per capita for the United States.</li>
+<li>Calculate the real GDP per capita for the United States in 2012 dollars. You shouldn’t use the CPI here. The Fed and other national agencies have a special kind of CPI-like measure for GDP called the “GDP deflator”, which is included in the dataset you downloaded. The reference year for this deflator is 2012.</li>
+<li>Calculate the real GDP per capita for the United States in 2018 dollars.</li>
+<li>Create a plot showing three lines over time: nominal GDP per capita, real GDP per capita (2012 dollars), and real GDP per capita (2018 dollars).</li>
+<li>Calculate the percent change between each year for one of the real GDP columns. Which year saw the biggest growth rate? Which year saw the smallest growth rate? Plot the annual percent change if you’re feeling adventurous.</li>
+</ol>
+</div>
+<div id="section-5" class="section level2">
+<h2>6</h2>
+<p>James Madison, a leading figure in the debates about the US Constitution after the formerly British colonies in the United States of America won the war of independence, wrote in 1788:</p>
+<blockquote>
+<p>In framing a government which is to be administered by men over men, the great difficulty lies in this: you must first enable the government to control the governed; and in the next place oblige it to control itself.</p>
+</blockquote>
+<p>How does democracy (including the rule of law) address Madison’s concerns to oblige the government to “control itself”? (<strong>≈100 words</strong>)</p>
+</div>
+<div id="section-6" class="section level2">
+<h2>7</h2>
+<p>Thailand and Cambodia produce rice and trucks at constant rates of product transformation (their possibility frontiers are straight lines—they don’t make more or less of the product depending on how much they’re currently making). In one year, Thailand could produce 1,500 tons of rice and no trucks, 500 boatloads of trucks and no rice, or any combination in between. Cambodia can produce 1,000 tons of rice or 200 boatloads of trucks, or somewhere in between. <strong>Answer the following</strong>:</p>
+<ol style="list-style-type: decimal">
+<li>Draw the production possibility frontier for each country, labeling each curve and known points.</li>
+<li>Thailand can produce more of both projects than Cambodia. Can Thailand gain anything by trading with Cambodia? <strong>Explain in ≈30 words.</strong></li>
+<li>If the answer to #2 is yes, which ratios of trucks to rice create advantages from trade? Which ratios of trucks to rice create disadvantages from trade?</li>
+</ol>
+</div>

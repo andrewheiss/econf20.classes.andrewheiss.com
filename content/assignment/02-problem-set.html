@@ -1,0 +1,1574 @@
+---
+title: "Problem set 2"
+linktitle: "Problem set 2"
+date: "2020-09-21"
+due_date: "2020-09-21"
+due_time: "11:59 PM"
+menu:
+  assignment:
+    parent: Problem sets
+    weight: 2
+type: docs
+weight: 2
+editor_options: 
+  chunk_output_type: console
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p><strong>Submit this as a PDF on iCollege.</strong> You can use whatever you want to make your drawings, including <a href="https://gravit.io/">Gravit Designer</a>, Adobe Illustrator, Excel, PowerPoint, Microsoft Paint, or photographed/scanned pen and paper.</p>
+<p><strong>Cite your sources and show your work.</strong></p>
+<div id="section" class="section level2">
+<h2>1</h2>
+<p>The following game represents the interaction between two software engineers, Astrid and Bettina, who are working together to write code as a part of a project. Astrid is better at writing Java code, while Bettina prefers C++. The numbers represent the pay in dollars for completion of the project.</p>
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#pzveloiefp .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#pzveloiefp .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#pzveloiefp .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#pzveloiefp .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#pzveloiefp .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pzveloiefp .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#pzveloiefp .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#pzveloiefp .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#pzveloiefp .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#pzveloiefp .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#pzveloiefp .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#pzveloiefp .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#pzveloiefp .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#pzveloiefp .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#pzveloiefp .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#pzveloiefp .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#pzveloiefp .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#pzveloiefp .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#pzveloiefp .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pzveloiefp .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#pzveloiefp .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pzveloiefp .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#pzveloiefp .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pzveloiefp .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#pzveloiefp .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#pzveloiefp .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#pzveloiefp .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#pzveloiefp .gt_left {
+  text-align: left;
+}
+
+#pzveloiefp .gt_center {
+  text-align: center;
+}
+
+#pzveloiefp .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#pzveloiefp .gt_font_normal {
+  font-weight: normal;
+}
+
+#pzveloiefp .gt_font_bold {
+  font-weight: bold;
+}
+
+#pzveloiefp .gt_font_italic {
+  font-style: italic;
+}
+
+#pzveloiefp .gt_super {
+  font-size: 65%;
+}
+
+#pzveloiefp .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="pzveloiefp" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_center gt_columns_bottom_border" rowspan="2" colspan="1"></th>
+      <th class="gt_col_heading gt_center gt_columns_bottom_border" rowspan="2" colspan="1"></th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" style="font-weight: bold;">
+        <span class="gt_column_spanner">Bettina</span>
+      </th>
+    </tr>
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Java</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">C++</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_left" style="background-color: #FFFFFF; font-weight: bold;">Astrid</td>
+      <td class="gt_row gt_left" style="background-color: #FFFFFF;">Java</td>
+      <td class="gt_row gt_center" style="background-color: #FFFFFF;">$4,000, $3,000</td>
+      <td class="gt_row gt_center" style="background-color: #FFFFFF;">$2,000, $2,000</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="background-color: #FFFFFF; font-weight: bold;"></td>
+      <td class="gt_row gt_left" style="background-color: #FFFFFF;">C++</td>
+      <td class="gt_row gt_center" style="background-color: #FFFFFF;">$0, $0</td>
+      <td class="gt_row gt_center" style="background-color: #FFFFFF;">$3,000, $6,000</td>
+    </tr>
+  </tbody>
+  
+  
+</table></div>
+<p><br />
+</p>
+<p>Based on this information, which of the following are true? Why or why not? <strong>Explain why or why not in a sentence for each.</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>There are two Nash equilibria: (Java, Java) and (C++, C++).</p></li>
+<li><p>If Astrid can choose the language first and commit to it, then (Java, Java) will be chosen.</p></li>
+<li><p>If the two can make an agreement beforehand, including a transfer of $500 from Bettina to Astrid, then (C++, C++) will be chosen.</p></li>
+<li><p>If the two can make an agreement beforehand, including a transfer of $2,000 from Bettina to Astrid, then (C++, C++) will be chosen.</p></li>
+<li><p>If the two cannot make an agreement beforehand, then they may end up with the (Java, C++) outcome.</p></li>
+</ol>
+</div>
+<div id="section-1" class="section level2">
+<h2>2</h2>
+<p>Consider a repeated prisoners’ dilemma game with a finite number of rounds.</p>
+<ol style="list-style-type: decimal">
+<li><p>If we assume that all parties are narrowly rational, and that they know which is the last period, why would we predict no cooperation during the whole game? <strong>Answer in a sentence.</strong></p></li>
+<li><p>Why, in practice, might parties not behave this way? <strong>Answer in ≈30 words.</strong></p></li>
+</ol>
+<p>In the prisoners’ dilemma computer tournament described in the Radiolab episode, the <em>Tit for Tat</em> strategy won. This was also the case in the <a href="http://ncase.me/trust/">“Evolution of Trust”</a> game that you played.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>In what sense, exactly, did it win? <strong>Answer in a sentence.</strong></p></li>
+<li><p>How robust was this finding? Are there situations where <em>Tit for Tat</em> is too nice? Too provocable? Too forgiving? <strong>Answer in ≈30 words.</strong></p></li>
+</ol>
+</div>
+<div id="section-2" class="section level2">
+<h2>3</h2>
+<p>The inherent negativeness in political campaigns is often described as a classic prisoner’s dilemma.</p>
+<ol style="list-style-type: decimal">
+<li><p>Write down a payoff matrix that shows the choice between positive and negative campaigning as a prisoner’s dilemma.</p></li>
+<li><p>Give a recent real-life example of a negative campaign prisoner’s dilemma. <strong>Answer in ≈30 words.</strong></p></li>
+</ol>
+<p>In class, I argued that negative political campaigning might be better modeled as a stag hunt.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Why did I say this? What is the difference between a stag hunt and a prisoner’s dilemma? <strong>Answer in ≈50 words.</strong></p></li>
+<li><p>Write down a payoff matrix that shows the choice between positive and negative campaigning as a stag hunt.</p></li>
+</ol>
+</div>
+<div id="section-3" class="section level2">
+<h2>4</h2>
+<p>After Hurricane Maria, hundreds of nonprofit organizations streamed to Puerto Rico and other Caribbean islands to provide disaster relief. <a href="https://theconversation.com/response-to-natural-disasters-like-harvey-could-be-helped-with-game-theory-83125">Research has found</a> that coordination between nonprofits during disasters is difficult to maintain—it’s easy for individual nonprofits to fundraise and pursue programming on their own while ignoring other organizations working on the same issues. Additionally, there are incentives to do projects that are cheap and have fast turnaround, since <a href="https://www.sciencedirect.com/science/article/pii/S092552730900365X">donors respond to the visibility of organizations providing disaster relief</a>.</p>
+<p>Consider two nonprofit organizations working in Puerto Rico. Together, they could spend time coordinating their efforts and run a shelter for hurricane victims, providing each organization with 100 utils. Alternatively, they could individually distribute paper towels—a simple, low-cost, fast, and <a href="https://www.cnn.com/videos/politics/2017/10/03/donald-trump-puerto-rico-supplies-von.cnn/video/playlists/trumps-response-to-puerto-rico-crisis/">visible</a> project—and receive 5 utils.</p>
+<p>This situation can be modeled with the following payoff matrix:</p>
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#dbgvzfontn .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#dbgvzfontn .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dbgvzfontn .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#dbgvzfontn .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#dbgvzfontn .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dbgvzfontn .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dbgvzfontn .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#dbgvzfontn .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#dbgvzfontn .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#dbgvzfontn .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#dbgvzfontn .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#dbgvzfontn .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#dbgvzfontn .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#dbgvzfontn .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#dbgvzfontn .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#dbgvzfontn .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#dbgvzfontn .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#dbgvzfontn .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#dbgvzfontn .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dbgvzfontn .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#dbgvzfontn .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dbgvzfontn .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#dbgvzfontn .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dbgvzfontn .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dbgvzfontn .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#dbgvzfontn .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dbgvzfontn .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#dbgvzfontn .gt_left {
+  text-align: left;
+}
+
+#dbgvzfontn .gt_center {
+  text-align: center;
+}
+
+#dbgvzfontn .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#dbgvzfontn .gt_font_normal {
+  font-weight: normal;
+}
+
+#dbgvzfontn .gt_font_bold {
+  font-weight: bold;
+}
+
+#dbgvzfontn .gt_font_italic {
+  font-style: italic;
+}
+
+#dbgvzfontn .gt_super {
+  font-size: 65%;
+}
+
+#dbgvzfontn .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="dbgvzfontn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_center gt_columns_bottom_border" rowspan="2" colspan="1"></th>
+      <th class="gt_col_heading gt_center gt_columns_bottom_border" rowspan="2" colspan="1"></th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" style="font-weight: bold;">
+        <span class="gt_column_spanner">Nonprofit 2</span>
+      </th>
+    </tr>
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Run shelter</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Distribute paper towels</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_left" style="background-color: #FFFFFF; font-weight: bold;">Nonprofit 1</td>
+      <td class="gt_row gt_left" style="background-color: #FFFFFF;">Run shelter</td>
+      <td class="gt_row gt_center" style="background-color: #FFFFFF;">100, 100</td>
+      <td class="gt_row gt_center" style="background-color: #FFFFFF;">0, 5</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="background-color: #FFFFFF; font-weight: bold;"></td>
+      <td class="gt_row gt_left" style="background-color: #FFFFFF;">Distribute paper towels</td>
+      <td class="gt_row gt_center" style="background-color: #FFFFFF;">5, 0</td>
+      <td class="gt_row gt_center" style="background-color: #FFFFFF;">5, 5</td>
+    </tr>
+  </tbody>
+  
+  
+</table></div>
+<ol style="list-style-type: decimal">
+<li><p>What are the consequences of this kind of interaction? What will the two organizations naturally tend to do? Why? (i.e. what are the equilibria?) <strong>Answer in ≈30 words.</strong></p></li>
+<li><p>What kind of game is this? Why? Can cooperation be ensured? How? <strong>Answer in ≈20 words.</strong></p></li>
+<li><p><strong>Extra credit:</strong> In the absence of communication, what are the two nonprofits’ mixed strategies? (See <a href="/resource/game-theory/">the guide in the resources section</a> for how to calculate mixed strategies.) How will they guess what the other organization will do? Under what conditions will nonprofit 1 choose to run the shelter? (i.e. what are the probability cutoffs for each nonprofit choosing to run the shelter or distribute paper towels?) <strong>Answer in ≈40 words. Show your work.</strong></p></li>
+<li><p><strong>Extra credit:</strong> What is the expected payoff of engaging in a mixed strategy? (i.e. choosing to gamble based on probability cutoffs rather than communicate and coordinate in person?) <strong>Show your work.</strong></p></li>
+</ol>
+</div>
+<div id="section-4" class="section level2">
+<h2>5</h2>
+<p><a href="https://www.edelman.com/trust-barometer">A recent poll by the Edelman Trust Barometer</a> shows a staggering drop in trust in private and public institutions in the United States. Only 33% of Americans surveyed have trust in government, and “no country saw steeper declines than the United States, with a 37-point aggregate drop in trust across all institutions”</p>
+<ol style="list-style-type: decimal">
+<li><p>Why does a community with a high level of trust have an advantage over one with lower levels of trust? (<em>Hint</em>: recall your reading from Mayer, 2014 on stag hunts) <strong>Answer in ≈40 words.</strong></p></li>
+<li><p>To what extent can the institution of trust be thought of as a cooperative equilibrium in a stag hunt game? <strong>Answer in ≈30 words.</strong></p></li>
+<li><p>How might a cooperative equilibrium degenerate into a non-cooperative equilibrium? <strong>Answer in ≈30 words.</strong></p></li>
+</ol>
+</div>
+<div id="section-5" class="section level2">
+<h2>6</h2>
+<p>Consider <strong>the society you live in,</strong> or <strong>another society</strong> with which you are familiar.</p>
+<ol style="list-style-type: decimal">
+<li>To make society fairer (according to the substantive judgment of fairness), would you want greater equality of income, happiness, or freedom? Why? Would there be a trade-off between these aspects? (<strong>≈30 words</strong>)</li>
+<li>Are there other things that should be more equal to achieve greater substantive fairness in this society? (<strong>≈30 words</strong>)</li>
+<li>How fair is this society, according to the procedural judgment of fairness? (<strong>≈30 words</strong>)</li>
+<li>Suppose that, behind a Rawlsian veil of ignorance, you could choose to live in a society in which one (but only one) of the three procedural standards for fairness (voluntary exchange of property, equality of opportunity, and deservingness) would be the guiding principle for how institutions are organized. Which procedural standard would you choose, and why? (<strong>≈50 words</strong>)</li>
+</ol>
+</div>
+<div id="section-6" class="section level2">
+<h2>7</h2>
+<ol style="list-style-type: decimal">
+<li><p>Two farmers have unlimited access to a common plot of land and can let their cows graze on it. The matrix below shows the benefits they get from grazing either 1 or 2+ cows on the land.</p>
+<style>html {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+    }
+    
+    #xdduhtxcdz .gt_table {
+      display: table;
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+      color: #333333;
+      font-size: 16px;
+      background-color: #FFFFFF;
+      width: 100%;
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #A8A8A8;
+      border-right-style: none;
+      border-right-width: 2px;
+      border-right-color: #D3D3D3;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #A8A8A8;
+      border-left-style: none;
+      border-left-width: 2px;
+      border-left-color: #D3D3D3;
+    }
+    
+    #xdduhtxcdz .gt_heading {
+      background-color: #FFFFFF;
+      text-align: center;
+      border-bottom-color: #FFFFFF;
+      border-left-style: none;
+      border-left-width: 1px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 1px;
+      border-right-color: #D3D3D3;
+    }
+    
+    #xdduhtxcdz .gt_title {
+      color: #333333;
+      font-size: 125%;
+      font-weight: initial;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      border-bottom-color: #FFFFFF;
+      border-bottom-width: 0;
+    }
+    
+    #xdduhtxcdz .gt_subtitle {
+      color: #333333;
+      font-size: 85%;
+      font-weight: initial;
+      padding-top: 0;
+      padding-bottom: 4px;
+      border-top-color: #FFFFFF;
+      border-top-width: 0;
+    }
+    
+    #xdduhtxcdz .gt_bottom_border {
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+    }
+    
+    #xdduhtxcdz .gt_col_headings {
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #D3D3D3;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+      border-left-style: none;
+      border-left-width: 1px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 1px;
+      border-right-color: #D3D3D3;
+    }
+    
+    #xdduhtxcdz .gt_col_heading {
+      color: #333333;
+      background-color: #FFFFFF;
+      font-size: 100%;
+      font-weight: normal;
+      text-transform: inherit;
+      border-left-style: none;
+      border-left-width: 1px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 1px;
+      border-right-color: #D3D3D3;
+      vertical-align: bottom;
+      padding-top: 5px;
+      padding-bottom: 6px;
+      padding-left: 5px;
+      padding-right: 5px;
+      overflow-x: hidden;
+    }
+    
+    #xdduhtxcdz .gt_column_spanner_outer {
+      color: #333333;
+      background-color: #FFFFFF;
+      font-size: 100%;
+      font-weight: normal;
+      text-transform: inherit;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+    
+    #xdduhtxcdz .gt_column_spanner_outer:first-child {
+      padding-left: 0;
+    }
+    
+    #xdduhtxcdz .gt_column_spanner_outer:last-child {
+      padding-right: 0;
+    }
+    
+    #xdduhtxcdz .gt_column_spanner {
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+      vertical-align: bottom;
+      padding-top: 5px;
+      padding-bottom: 6px;
+      overflow-x: hidden;
+      display: inline-block;
+      width: 100%;
+    }
+    
+    #xdduhtxcdz .gt_group_heading {
+      padding: 8px;
+      color: #333333;
+      background-color: #FFFFFF;
+      font-size: 100%;
+      font-weight: initial;
+      text-transform: inherit;
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #D3D3D3;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+      border-left-style: none;
+      border-left-width: 1px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 1px;
+      border-right-color: #D3D3D3;
+      vertical-align: middle;
+    }
+    
+    #xdduhtxcdz .gt_empty_group_heading {
+      padding: 0.5px;
+      color: #333333;
+      background-color: #FFFFFF;
+      font-size: 100%;
+      font-weight: initial;
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #D3D3D3;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+      vertical-align: middle;
+    }
+    
+    #xdduhtxcdz .gt_striped {
+      background-color: rgba(128, 128, 128, 0.05);
+    }
+    
+    #xdduhtxcdz .gt_from_md > :first-child {
+      margin-top: 0;
+    }
+    
+    #xdduhtxcdz .gt_from_md > :last-child {
+      margin-bottom: 0;
+    }
+    
+    #xdduhtxcdz .gt_row {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin: 10px;
+      border-top-style: solid;
+      border-top-width: 1px;
+      border-top-color: #D3D3D3;
+      border-left-style: none;
+      border-left-width: 1px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 1px;
+      border-right-color: #D3D3D3;
+      vertical-align: middle;
+      overflow-x: hidden;
+    }
+    
+    #xdduhtxcdz .gt_stub {
+      color: #333333;
+      background-color: #FFFFFF;
+      font-size: 100%;
+      font-weight: initial;
+      text-transform: inherit;
+      border-right-style: solid;
+      border-right-width: 2px;
+      border-right-color: #D3D3D3;
+      padding-left: 12px;
+    }
+    
+    #xdduhtxcdz .gt_summary_row {
+      color: #333333;
+      background-color: #FFFFFF;
+      text-transform: inherit;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    
+    #xdduhtxcdz .gt_first_summary_row {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #D3D3D3;
+    }
+    
+    #xdduhtxcdz .gt_grand_summary_row {
+      color: #333333;
+      background-color: #FFFFFF;
+      text-transform: inherit;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    
+    #xdduhtxcdz .gt_first_grand_summary_row {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-top-style: double;
+      border-top-width: 6px;
+      border-top-color: #D3D3D3;
+    }
+    
+    #xdduhtxcdz .gt_table_body {
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #D3D3D3;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+    }
+    
+    #xdduhtxcdz .gt_footnotes {
+      color: #333333;
+      background-color: #FFFFFF;
+      border-bottom-style: none;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+      border-left-style: none;
+      border-left-width: 2px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 2px;
+      border-right-color: #D3D3D3;
+    }
+    
+    #xdduhtxcdz .gt_footnote {
+      margin: 0px;
+      font-size: 90%;
+      padding: 4px;
+    }
+    
+    #xdduhtxcdz .gt_sourcenotes {
+      color: #333333;
+      background-color: #FFFFFF;
+      border-bottom-style: none;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+      border-left-style: none;
+      border-left-width: 2px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 2px;
+      border-right-color: #D3D3D3;
+    }
+    
+    #xdduhtxcdz .gt_sourcenote {
+      font-size: 90%;
+      padding: 4px;
+    }
+    
+    #xdduhtxcdz .gt_left {
+      text-align: left;
+    }
+    
+    #xdduhtxcdz .gt_center {
+      text-align: center;
+    }
+    
+    #xdduhtxcdz .gt_right {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    
+    #xdduhtxcdz .gt_font_normal {
+      font-weight: normal;
+    }
+    
+    #xdduhtxcdz .gt_font_bold {
+      font-weight: bold;
+    }
+    
+    #xdduhtxcdz .gt_font_italic {
+      font-style: italic;
+    }
+    
+    #xdduhtxcdz .gt_super {
+      font-size: 65%;
+    }
+    
+    #xdduhtxcdz .gt_footnote_marks {
+      font-style: italic;
+      font-size: 65%;
+    }
+    </style>
+    <div id="xdduhtxcdz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+      
+      <thead class="gt_col_headings">
+        <tr>
+          <th class="gt_col_heading gt_center gt_columns_bottom_border" rowspan="2" colspan="1"></th>
+          <th class="gt_col_heading gt_center gt_columns_bottom_border" rowspan="2" colspan="1"></th>
+          <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" style="font-weight: bold;">
+            <span class="gt_column_spanner">Farmer 2</span>
+          </th>
+        </tr>
+        <tr>
+          <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">1 cow</th>
+          <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">2+ cows</th>
+        </tr>
+      </thead>
+      <tbody class="gt_table_body">
+        <tr>
+          <td class="gt_row gt_left" style="background-color: #FFFFFF; font-weight: bold;">Farmer 1</td>
+          <td class="gt_row gt_left" style="background-color: #FFFFFF;">1 cow</td>
+          <td class="gt_row gt_center" style="background-color: #FFFFFF;">8, 8</td>
+          <td class="gt_row gt_center" style="background-color: #FFFFFF;">2, 10</td>
+        </tr>
+        <tr>
+          <td class="gt_row gt_left" style="background-color: #FFFFFF; font-weight: bold;"></td>
+          <td class="gt_row gt_left" style="background-color: #FFFFFF;">2+ cows</td>
+          <td class="gt_row gt_center" style="background-color: #FFFFFF;">10, 2</td>
+          <td class="gt_row gt_center" style="background-color: #FFFFFF;">4, 4</td>
+        </tr>
+      </tbody>
+      
+      
+    </table></div>
+<ol style="list-style-type: lower-alpha">
+<li>What category of game is this?</li>
+<li>What is/are the Nash equilibrium/equilibria?</li>
+<li>What is/are the Pareto efficient outcome(s) in this game?</li>
+</ol></li>
+<li><p>The government offers a reward or subsidy for communities where farmers only allow 1 cow to graze on the common field, resulting in this new payoff matrix:</p>
+<style>html {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+    }
+    
+    #ebohtplcwi .gt_table {
+      display: table;
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+      color: #333333;
+      font-size: 16px;
+      background-color: #FFFFFF;
+      width: 100%;
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #A8A8A8;
+      border-right-style: none;
+      border-right-width: 2px;
+      border-right-color: #D3D3D3;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #A8A8A8;
+      border-left-style: none;
+      border-left-width: 2px;
+      border-left-color: #D3D3D3;
+    }
+    
+    #ebohtplcwi .gt_heading {
+      background-color: #FFFFFF;
+      text-align: center;
+      border-bottom-color: #FFFFFF;
+      border-left-style: none;
+      border-left-width: 1px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 1px;
+      border-right-color: #D3D3D3;
+    }
+    
+    #ebohtplcwi .gt_title {
+      color: #333333;
+      font-size: 125%;
+      font-weight: initial;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      border-bottom-color: #FFFFFF;
+      border-bottom-width: 0;
+    }
+    
+    #ebohtplcwi .gt_subtitle {
+      color: #333333;
+      font-size: 85%;
+      font-weight: initial;
+      padding-top: 0;
+      padding-bottom: 4px;
+      border-top-color: #FFFFFF;
+      border-top-width: 0;
+    }
+    
+    #ebohtplcwi .gt_bottom_border {
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+    }
+    
+    #ebohtplcwi .gt_col_headings {
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #D3D3D3;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+      border-left-style: none;
+      border-left-width: 1px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 1px;
+      border-right-color: #D3D3D3;
+    }
+    
+    #ebohtplcwi .gt_col_heading {
+      color: #333333;
+      background-color: #FFFFFF;
+      font-size: 100%;
+      font-weight: normal;
+      text-transform: inherit;
+      border-left-style: none;
+      border-left-width: 1px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 1px;
+      border-right-color: #D3D3D3;
+      vertical-align: bottom;
+      padding-top: 5px;
+      padding-bottom: 6px;
+      padding-left: 5px;
+      padding-right: 5px;
+      overflow-x: hidden;
+    }
+    
+    #ebohtplcwi .gt_column_spanner_outer {
+      color: #333333;
+      background-color: #FFFFFF;
+      font-size: 100%;
+      font-weight: normal;
+      text-transform: inherit;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+    
+    #ebohtplcwi .gt_column_spanner_outer:first-child {
+      padding-left: 0;
+    }
+    
+    #ebohtplcwi .gt_column_spanner_outer:last-child {
+      padding-right: 0;
+    }
+    
+    #ebohtplcwi .gt_column_spanner {
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+      vertical-align: bottom;
+      padding-top: 5px;
+      padding-bottom: 6px;
+      overflow-x: hidden;
+      display: inline-block;
+      width: 100%;
+    }
+    
+    #ebohtplcwi .gt_group_heading {
+      padding: 8px;
+      color: #333333;
+      background-color: #FFFFFF;
+      font-size: 100%;
+      font-weight: initial;
+      text-transform: inherit;
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #D3D3D3;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+      border-left-style: none;
+      border-left-width: 1px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 1px;
+      border-right-color: #D3D3D3;
+      vertical-align: middle;
+    }
+    
+    #ebohtplcwi .gt_empty_group_heading {
+      padding: 0.5px;
+      color: #333333;
+      background-color: #FFFFFF;
+      font-size: 100%;
+      font-weight: initial;
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #D3D3D3;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+      vertical-align: middle;
+    }
+    
+    #ebohtplcwi .gt_striped {
+      background-color: rgba(128, 128, 128, 0.05);
+    }
+    
+    #ebohtplcwi .gt_from_md > :first-child {
+      margin-top: 0;
+    }
+    
+    #ebohtplcwi .gt_from_md > :last-child {
+      margin-bottom: 0;
+    }
+    
+    #ebohtplcwi .gt_row {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin: 10px;
+      border-top-style: solid;
+      border-top-width: 1px;
+      border-top-color: #D3D3D3;
+      border-left-style: none;
+      border-left-width: 1px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 1px;
+      border-right-color: #D3D3D3;
+      vertical-align: middle;
+      overflow-x: hidden;
+    }
+    
+    #ebohtplcwi .gt_stub {
+      color: #333333;
+      background-color: #FFFFFF;
+      font-size: 100%;
+      font-weight: initial;
+      text-transform: inherit;
+      border-right-style: solid;
+      border-right-width: 2px;
+      border-right-color: #D3D3D3;
+      padding-left: 12px;
+    }
+    
+    #ebohtplcwi .gt_summary_row {
+      color: #333333;
+      background-color: #FFFFFF;
+      text-transform: inherit;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    
+    #ebohtplcwi .gt_first_summary_row {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #D3D3D3;
+    }
+    
+    #ebohtplcwi .gt_grand_summary_row {
+      color: #333333;
+      background-color: #FFFFFF;
+      text-transform: inherit;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    
+    #ebohtplcwi .gt_first_grand_summary_row {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-top-style: double;
+      border-top-width: 6px;
+      border-top-color: #D3D3D3;
+    }
+    
+    #ebohtplcwi .gt_table_body {
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-top-color: #D3D3D3;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+    }
+    
+    #ebohtplcwi .gt_footnotes {
+      color: #333333;
+      background-color: #FFFFFF;
+      border-bottom-style: none;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+      border-left-style: none;
+      border-left-width: 2px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 2px;
+      border-right-color: #D3D3D3;
+    }
+    
+    #ebohtplcwi .gt_footnote {
+      margin: 0px;
+      font-size: 90%;
+      padding: 4px;
+    }
+    
+    #ebohtplcwi .gt_sourcenotes {
+      color: #333333;
+      background-color: #FFFFFF;
+      border-bottom-style: none;
+      border-bottom-width: 2px;
+      border-bottom-color: #D3D3D3;
+      border-left-style: none;
+      border-left-width: 2px;
+      border-left-color: #D3D3D3;
+      border-right-style: none;
+      border-right-width: 2px;
+      border-right-color: #D3D3D3;
+    }
+    
+    #ebohtplcwi .gt_sourcenote {
+      font-size: 90%;
+      padding: 4px;
+    }
+    
+    #ebohtplcwi .gt_left {
+      text-align: left;
+    }
+    
+    #ebohtplcwi .gt_center {
+      text-align: center;
+    }
+    
+    #ebohtplcwi .gt_right {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    
+    #ebohtplcwi .gt_font_normal {
+      font-weight: normal;
+    }
+    
+    #ebohtplcwi .gt_font_bold {
+      font-weight: bold;
+    }
+    
+    #ebohtplcwi .gt_font_italic {
+      font-style: italic;
+    }
+    
+    #ebohtplcwi .gt_super {
+      font-size: 65%;
+    }
+    
+    #ebohtplcwi .gt_footnote_marks {
+      font-style: italic;
+      font-size: 65%;
+    }
+    </style>
+    <div id="ebohtplcwi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+      
+      <thead class="gt_col_headings">
+        <tr>
+          <th class="gt_col_heading gt_center gt_columns_bottom_border" rowspan="2" colspan="1"></th>
+          <th class="gt_col_heading gt_center gt_columns_bottom_border" rowspan="2" colspan="1"></th>
+          <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" style="font-weight: bold;">
+            <span class="gt_column_spanner">Farmer 2</span>
+          </th>
+        </tr>
+        <tr>
+          <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">1 cow</th>
+          <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">2+ cows</th>
+        </tr>
+      </thead>
+      <tbody class="gt_table_body">
+        <tr>
+          <td class="gt_row gt_left" style="background-color: #FFFFFF; font-weight: bold;">Farmer 1</td>
+          <td class="gt_row gt_left" style="background-color: #FFFFFF;">1 cow</td>
+          <td class="gt_row gt_center" style="background-color: #FFFFFF;">15, 15</td>
+          <td class="gt_row gt_center" style="background-color: #FFFFFF;">2, 10</td>
+        </tr>
+        <tr>
+          <td class="gt_row gt_left" style="background-color: #FFFFFF; font-weight: bold;"></td>
+          <td class="gt_row gt_left" style="background-color: #FFFFFF;">2+ cows</td>
+          <td class="gt_row gt_center" style="background-color: #FFFFFF;">10, 2</td>
+          <td class="gt_row gt_center" style="background-color: #FFFFFF;">4, 4</td>
+        </tr>
+      </tbody>
+      
+      
+    </table></div>
+<ol style="list-style-type: lower-alpha">
+<li>What category of game is this?</li>
+<li>What is/are the Nash equilibrium/equilibria?</li>
+<li>What is/are the Pareto efficient outcome(s) in this game?</li>
+</ol></li>
+<li><p>How is Pareto efficiency different from fairness? (<strong>≈30 words</strong>)</p></li>
+</ol>
+</div>

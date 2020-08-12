@@ -1,0 +1,19 @@
+---
+title: "Weekly report 5"
+linktitle: "Weekly report 5"
+date: "2020-09-28"
+due_date: "2020-09-28"
+due_time: "11:59 PM"
+menu:
+  assignment:
+    parent: Weekly reports
+    weight: 5
+type: docs
+weight: 5
+---
+
+Cover **class sessions 5–6** in this report. As a group, figure out how you want to divide the content over two weeks.
+
+Review the answer key for **problem set 2**.
+
+Remember to follow the [instructions here](/assignment/#weekly-reports-1) and use the [template here](/assignment/weekly-reports/).

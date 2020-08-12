@@ -1,0 +1,11 @@
+---
+title: Readings, lectures, and videos
+menu:
+  content:
+    parent: Overview
+    weight: 1
+type: docs
+weight: 1
+---
+
+Each class session has a set of required readings that you should complete ***before*** watching the lecture. Lecture videos are included in a YouTube playlist on each session page. PDFs of the slides are also included on each session page.

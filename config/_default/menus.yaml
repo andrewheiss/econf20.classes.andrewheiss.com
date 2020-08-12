@@ -1,0 +1,37 @@
+main:
+  - name: Syllabus
+    url: /syllabus/
+    weight: 1
+  - name: Schedule
+    url: /schedule/
+    weight: 2
+  - name: Content
+    url: /content/
+    weight: 3
+  - name: Assignments
+    url: /assignment/
+    weight: 4
+  - name: Resources
+    url: /resource/
+    weight: 5
+  - name: '<i class="fab fa-slack"></i>'
+    url: "https://gsueconf2020.slack.com"
+    weight: 6
+
+content:
+  - name: Overview
+    weight: 1
+  - name: Course content
+    weight: 2
+assignment:
+  - name: Overview
+    weight: 1
+  - name: Problem sets
+    weight: 2
+  - name: Weekly reports
+    weight: 3
+resource:
+  - name: Resources
+    weight: 1
+  - name: Guides
+    weight: 2

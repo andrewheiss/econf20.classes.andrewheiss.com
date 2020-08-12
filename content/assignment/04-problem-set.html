@@ -1,0 +1,179 @@
+---
+title: "Problem set 4"
+linktitle: "Problem set 4"
+date: "2020-10-19"
+due_date: "2020-10-19"
+due_time: "11:59 PM"
+output:
+  blogdown::html_page:
+    toc: true
+menu:
+  assignment:
+    parent: Problem sets
+    weight: 4
+type: docs
+weight: 4
+editor_options: 
+  chunk_output_type: console
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#section">1</a>
+<ul>
+<li><a href="#part-1">Part 1</a></li>
+<li><a href="#part-2">Part 2</a></li>
+<li><a href="#part-3">Part 3</a></li>
+<li><a href="#part-4">Part 4</a></li>
+</ul></li>
+<li><a href="#section-1">2</a></li>
+<li><a href="#section-2">3</a></li>
+<li><a href="#section-3">4</a></li>
+<li><a href="#section-4">5</a></li>
+<li><a href="#section-5">6</a></li>
+<li><a href="#section-6">7</a></li>
+<li><a href="#section-7">8</a></li>
+</ul>
+</div>
+
+<p><strong>Submit this as a PDF on iCollege.</strong> You can use whatever you want to make your drawings, including <a href="https://gravit.io/">Gravit Designer</a>, Adobe Illustrator, Excel, PowerPoint, Microsoft Paint, or photographed/scanned pen and paper. <strong>I highly recommend using <a href="https://www.desmos.com/">Desmos</a> too!</strong></p>
+<p><strong>Cite your sources and show your work.</strong></p>
+<div id="section" class="section level2">
+<h2>1</h2>
+<p>Imagine a mild-mannered professor named Chidi Anagonye who is crippled with decision anxiety. He has to choose the best combination of pizza and frozen yogurt, but doesn’t know what to do! Here’s the information he has:</p>
+<ul>
+<li><p>He has a budget of $45 and must spend it all.</p></li>
+<li><p>Slices of Hawaiian pizza cost $3. Abbreviate this as <span class="math inline">\(x\)</span>.</p></li>
+<li><p>Bowls of frozen yogurt cost $1.50. Abbreviate this as <span class="math inline">\(y\)</span>.</p></li>
+<li><p>The happiness Chidi gets from eating pizza and frozen yogurt can be modeled with this utility function:</p>
+<p><span class="math display">\[
+  U(x, y) = x^2\ 0.25y
+  \]</span></p></li>
+</ul>
+<div id="part-1" class="section level3">
+<h3>Part 1</h3>
+<p>Draw Chidi’s budget line (or his personal consumption possibility frontier) and figure out the equation for this line in <span class="math inline">\(y = mx + b\)</span> form. What is the equation?</p>
+</div>
+<div id="part-2" class="section level3">
+<h3>Part 2</h3>
+<p>Rearrange Chidi’s utility function using algebra so that it is in terms of <span class="math inline">\(y\)</span> (i.e. so that it starts with <span class="math inline">\(y =\)</span>). (Mega hint: you can check your algebra with WolframAlpha by typing <code>solve u = x^2 * 0.25y for y</code>). Plot his indifference curves for 10 utils, 100 utils, and 500 utils (using Desmos or any other graphing system).</p>
+<p>What do these lines each represent?</p>
+</div>
+<div id="part-3" class="section level3">
+<h3>Part 3</h3>
+<p>This utility function looks a little different from ones we’ve seen previously in class, since <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> no longer have the same numbers in front of them. What does this imply about Chidi’s preferences, and why? Choose A, B, C, or D and explain in <strong>≈30 words</strong>:</p>
+<ol style="list-style-type: lower-alpha">
+<li>There is a 1:1 ratio of utility. He can exchange one slice of pizza for one bowl of yogurt and maintain the same level of utility.</li>
+<li>He prefers yogurt to pizza. If the prices of both items were identical, he would consume twice as many yogurts.</li>
+<li>He prefers pizza to yogurt. If the prices of both items were identical, he would consume twice as much pizza.</li>
+<li>It is impossible to know; utility is imaginary.</li>
+</ol>
+</div>
+<div id="part-4" class="section level3">
+<h3>Part 4</h3>
+<p>The marginal rate of substitution (or slope of Chidi’s indifference curve) is <span class="math inline">\(\frac{2y}{x}\)</span>. (I calculated this by going to WolframAlpha, typing <code>derive u = x^2\ 0.25y</code>, and finding the partial derivative with respect to <span class="math inline">\(x\)</span> (<span class="math inline">\(8xy\)</span>) and the partial derivative with respect to <span class="math inline">\(y\)</span> (<span class="math inline">\(4x^2\)</span>) and making them a ratio (<span class="math inline">\(\frac{8xy}{4x^2}\)</span>). This simplifies down to <span class="math inline">\(\frac{2y}{x}\)</span>.) This does not take into account the prices he faces. The marginal rate of substitution can also be written as a ratio of prices, or <span class="math inline">\(\frac{\text{Price}_x}{\text{Price}_y}\)</span>.</p>
+<p>Set the slope-only MRS and the ratio of prices equal to each other and solve for <span class="math inline">\(y\)</span> (i.e. make the equation start with <span class="math inline">\(y =\)</span>). This is the price-attuned marginal rate of substitution.</p>
+<p><span class="math display">\[
+\frac{2y}{x} = \frac{\text{Price}_\text{Pizza}}{\text{Price}_\text{Yogurt}}
+\]</span></p>
+<p>Finally, find where the price-attuned marginal rate of substitution matches the budget line by solving the system of equations. (Hint: your budget line will be <span class="math inline">\(y = \text{something} x ± \text{something}\)</span>, and your adjusted MRS will be something like <span class="math inline">\(y = \text{something else} x ± \text{something else}\)</span>. Take the <span class="math inline">\(y\)</span> of the adjusted MRS, plug it into the <span class="math inline">\(y\)</span> of the budget line, and use algebra to figure out what <span class="math inline">\(x\)</span> is (<span class="math inline">\(\text{something else} x ± \text{something else} = \text{something} x ± \text{something})\)</span>. Then take that <span class="math inline">\(x\)</span>, plug it in as <span class="math inline">\(x\)</span> into one of the equations, and solve for <span class="math inline">\(y\)</span>.)</p>
+<p>How many slices of pizza and bowls of frozen yogurt will Chidi consume given his budget of $45? How many utils will that level of consumption provide him with? Plot the budget line and tangential indifference curve.</p>
+</div>
+</div>
+<div id="section-1" class="section level2">
+<h2>2</h2>
+<p>Leslie Knope, deputy director of the parks department, once mused “Why would anybody ever eat anything besides breakfast food?” Consistent with this belief, she consumes waffles whenever possible.</p>
+<p>Here are 5 different sets of budget lines and indifference curves. In each, <em>point A</em> shows original consumption, <em>point B</em> shows new consumption after a change in budget, and <em>point C</em> shows the in-between level of hypothetical consumption. <em>The red line shows the original budget line; the blue line shows the budget line after a change in prices.</em></p>
+<p><img src="/img/assignments/indifference-curves-waffles.png" width="100%" /></p>
+<p>For each of these questions, select the appropriate answer(s) and explain why in <strong><em>≈20 words.</em></strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Of these graphs, which one(s) show an increase in the price of waffles? (<em>multiple answers allowed, but multiple answers aren’t necessarily correct</em>)</p>
+<ol style="list-style-type: lower-alpha">
+<li>I</li>
+<li>II</li>
+<li>III</li>
+<li>IV</li>
+<li>V</li>
+</ol></li>
+<li><p>Of these graphs, which one(s) show an increase in income? (<em>multiple answers allowed, but multiple answers aren’t necessarily correct</em>)</p>
+<ol style="list-style-type: lower-alpha">
+<li>I</li>
+<li>II</li>
+<li>III</li>
+<li>IV</li>
+<li>V</li>
+</ol></li>
+<li><p>Which of these graphs show waffles as a normal good? (<em>multiple answers allowed, but multiple answers aren’t necessarily correct</em>)</p>
+<ol style="list-style-type: lower-alpha">
+<li>I</li>
+<li>II</li>
+<li>III</li>
+<li>IV</li>
+<li>V</li>
+</ol></li>
+<li><p>Which of these graphs show waffles as an inferior good? (<em>multiple answers allowed, but multiple answers aren’t necessarily correct</em>)</p>
+<ol style="list-style-type: lower-alpha">
+<li>I</li>
+<li>II</li>
+<li>III</li>
+<li>IV</li>
+<li>V</li>
+</ol></li>
+</ol>
+</div>
+<div id="section-2" class="section level2">
+<h2>3</h2>
+<p><em>(This is similar to the Harvest Box/WIC example we talked about in class)</em></p>
+<p>Suppose residents of a rural community in a developing nation spend all of their income on two goods: clothing and food. The price of clothing is 10 dinar per package and the price of food is 5 dinar per kilogram.</p>
+<p>Consider a family with income of 200 dinar per week. In the absence of any government program, the family would consume 30 kg of food.</p>
+<ol style="list-style-type: decimal">
+<li>Draw the family’s budget line, labeling all axes and all points whose value you know. Mark the family’s equilibrium consumption point as <span class="math inline">\(A\)</span>.</li>
+<li>On the same graph, draw a new budget line for a program that provides each family with 5 free packages of clothing.</li>
+<li>In a new graph, draw the family’s original budget line. Show the effect of an increase in the price of clothing to 20 dinar per package, assuming that clothing is a normal good. Show the income and substitution effects. Use actual numbers. (There are no correct numbers, though.)</li>
+<li>What do the income and substitution effects mean in this situation?</li>
+</ol>
+</div>
+<div id="section-3" class="section level2">
+<h2>4</h2>
+<p>In each of these situations, explain who is the principal, who is the agent, and what aspects of their interaction are of interest to each and are not covered by a complete contract.</p>
+<ol style="list-style-type: decimal">
+<li>A company hires a security guard to protect its premises at night.</li>
+<li>A charity wants to commission research to find out as much as possible about a new virus.</li>
+</ol>
+<p>For each of these situations, predict a few possible consequences if the contract is poorly defined. Answer both in <strong>≈100 words</strong>.</p>
+</div>
+<div id="section-4" class="section level2">
+<h2>5</h2>
+<p>The British Road Safety Act of 1967 created a mandatory penalty for drunken driving—those convicted of a DUI lost their licenses for one year. Several insurance companies began offering policies that insured against loss of license. Policyholders were guaranteed a chauffeur-driven vehicle if they were convicted of DUI.</p>
+<p>It is reasonable to predict that people who chose to buy this insurance would subsequently have a higher rate of DUI arrests than those who did not buy the insurance.</p>
+<ol style="list-style-type: decimal">
+<li>Justify this prediction using adverse selection. What is adverse selection and how does it apply here? <strong><em>Discuss in ≈50 words</em></strong></li>
+<li>Justify this prediction using moral hazard. What is moral hazard and how does it apply here? <strong><em>Discuss in ≈50 words</em></strong></li>
+</ol>
+</div>
+<div id="section-5" class="section level2">
+<h2>6</h2>
+<p>Think of two public or nonprofit sector jobs. In each case, describe why the employment contract is necessarily incomplete. What important parts of the person’s job—things that the employer would like to see the employee do or not do—cannot be covered in a contract, or if they are, cannot be enforced? <strong><em>Discuss in ≈75 words</em></strong>.</p>
+</div>
+<div id="section-6" class="section level2">
+<h2>7</h2>
+<p>In an effort to encourage parents to read to their children, suppose that the state created “Georgia Reads,” a new program that subsidizes the purchase of children’s books. Under this proposal, every time a children’s book is purchased from a store in Georgia, the store would charge just <em>half</em> of the retail price and would be reimbursed directly by the state for the other half. The market price for a children’s book is $10 and books are a normal good.</p>
+<ol style="list-style-type: decimal">
+<li>For a family with an income of $1,000 per month, draw budget lines before and after Georgia Reads, labeling all known curves, axes, and points. (<em>Hint</em>: put “books” on the x-axis and “all other goods” (or “AOG”) on the y-axis.)</li>
+<li>Show the income and substitution effects. Use actual numbers. Note that your numbers will differ, since everyone’s indifference curves are different.</li>
+<li>What do the income and substitution effects mean in this situation?</li>
+</ol>
+</div>
+<div id="section-7" class="section level2">
+<h2>8</h2>
+<p><em>(This question is tricky, but it’s very similar to the Harvest Box example that we will talk about in class. If you find yourself completely stuck, don’t worry—<strong>this is a stretch/extra-credit question.</strong>)</em></p>
+<p>Legislators are frequently frustrated by a common reaction to new policy. Lawmakers pass a new bill that provides grants to local jurisdictions for specific purposes, but most of the money never seems to be spent for what they had hoped it would. This is rarely because local officials break the law—most are careful not to violate the letter of the law.</p>
+<p>For instance, imagine that Georgia wanted to increase the amount of money local school districts spend on textbooks. Legislators enact the Textbook Act of 2020, which provides grants to local districts equal to <span>$14</span> per student (so a district with 1,000 students would get <span>$14,000</span>). This new money can only be spent on textbooks. At the end of the year, state officials discover that the average amount spent on textbooks in the state only increased by $3.</p>
+<ol style="list-style-type: decimal">
+<li><p>Assuming that a school district can have preferences in their consumption of textbooks and other goods. Graphically illustrate how this underspending might have happened using budget lines and indifference curves.</p>
+<p><em>Hint</em>: place “textbooks” on the x-axis, “all other goods (AOG)” on the y-axis, and use dollars as the units for both (since you don’t know the price of textbooks).</p></li>
+<li><p>What are the income and substitution effects of the Textbook Act of 2020?</p></li>
+</ol>
+</div>

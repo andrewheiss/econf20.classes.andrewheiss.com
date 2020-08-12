@@ -1,0 +1,15 @@
+---
+title: "Work, wellbeing, and scarcity II"
+linktitle: "6: Work, wellbeing, and scarcity II"
+date: "2020-09-28"
+start_date: "2020-09-28"
+end_date: "2020-10-02"
+type: docs
+bibliography: "../../static/bib/references.bib"
+csl: "../../static/bib/chicago-fullnote-bibliography-no-bib.csl"
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+This session is a continuation of [session 5](/content/05-content/).

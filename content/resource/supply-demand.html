@@ -1,0 +1,236 @@
+---
+title: Supply, demand, surplus, DWL, and elasticity
+output:
+  blogdown::html_page:
+    toc: true
+menu:
+  resource:
+    parent: Guides
+type: docs
+weight: 6
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#supply-demand-surplus-dwl-and-burdens">Supply, demand, surplus, DWL, and burdens</a></li>
+<li><a href="#elasticity-and-tax-burdens">Elasticity and tax burdens</a>
+<ul>
+<li><a href="#elastic-demand">Elastic demand</a></li>
+<li><a href="#inelastic-demand">Inelastic demand</a></li>
+<li><a href="#elastic-supply">Elastic supply</a></li>
+<li><a href="#inelastic-supply">Inelastic supply</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>If you have a formula for a supply curve and a demand curve, you can calculate all sorts of things, including the market clearing price, or where the two lines intersect, and the consumer and producer surplus. If taxes are involved, you can also calculate new market prices and quantities, deadweight loss (or the loss of market efficiency that comes from the tax), the total tax revenues raised, and the tax burden on consumers and producers.</p>
+<p>Because this is a foundational concept in microeconomics, there are a billion YouTube videos with examples. Here are some of the best:</p>
+<ul>
+<li>Khan Academy has <a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus">a whole unit on consumer and producer surplus + market interventions here</a>, including these:
+<ul>
+<li><a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/consumer-producer-surplus-tut/v/demand-curve-as-marginal-benefit-curve">“Demand curve as marginal benefit curve”</a></li>
+<li><a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/consumer-producer-surplus-tut/v/consumer-surplus-introduction">“Consumer surplus introduction”</a></li>
+<li><a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/consumer-producer-surplus-tut/v/total-consumer-surplus-as-area">“Total consumer surplus as area”</a></li>
+<li><a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/consumer-producer-surplus-tut/v/producer-surplus">“Producer surplus”</a></li>
+<li><a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/consumer-producer-surplus-tut/v/equilibrium-allocative-efficiency-and-total-surplus">“Equilibrium, allocative efficiency, and total surplus”</a></li>
+<li><a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/deadweight-loss-tutorial/v/taxation-and-dead-weight-loss">“Taxation and dead weight loss”</a></li>
+<li><a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/deadweight-loss-tutorial/v/example-breaking-down-tax-incidence">"“Example breaking down tax incidence”</a></li>
+</ul></li>
+<li>Jodi Beggs has a ton of videos related to supply and demand (<a href="https://www.youtube.com/watch?v=bVzx8fts8Ng&amp;list=PL22785443C5FB0F83&amp;index=13">start here</a>)</li>
+<li>Jacob Clifford <a href="https://www.youtube.com/watch?v=gdXoDkCfcM8&amp;list=PL6B2DBE4C2FC8F845">has an entire unit on supply and demand here</a></li>
+</ul>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Mz0P_fXxik4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<div id="supply-demand-surplus-dwl-and-burdens" class="section level2">
+<h2>Supply, demand, surplus, DWL, and burdens</h2>
+<p>Here’s how to analyze a market with these equations:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{S} &amp;: P = 2 + 0.25Q \\
+\text{D} &amp;: P = 20 - 0.5Q \\
+\text{S}_\text{tax} &amp;: P = 2 + 0.25Q + 5
+\end{aligned}
+\]</span></p>
+<p><img src="/resource/supply-demand_files/figure-html/unnamed-chunk-2-1.png" width="1152" /></p>
+<ul>
+<li>Pre-tax quantity: <strong>24</strong></li>
+<li>Pre-tax price: <strong>$8</strong></li>
+<li>Pre-tax consumer surplus: <strong>$144</strong> (<span class="math inline">\(1/2 \times 24 \times 12\)</span>)</li>
+<li>Pre-tax producer surplus: <strong>$72</strong> (<span class="math inline">\(1/2 \times 24 \times 6\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Post-tax quantity: <strong>17.33</strong></li>
+<li>Post-tax price: <strong>$11.33</strong></li>
+<li>Post-tax consumer surplus: <strong>$75.11</strong> (<span class="math inline">\(1/2 \times 17.33 \times 8.67\)</span>)</li>
+<li>Post-tax producer surplus: <strong>$37.56</strong> (<span class="math inline">\(1/2 \times 17.33 \times 4.33\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Deadweight loss: <strong>$16.67</strong> (<span class="math inline">\(1/2 \times 6.67 \times 5\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Total tax incidence (revenue raised): <strong>$86.67</strong> (<span class="math inline">\((11.33 - 6.33) \times 17.33\)</span>)</li>
+<li>Consumer tax incidence: <strong>$57.78</strong> (<span class="math inline">\((11.33 - 8) \times 17.33\)</span>)</li>
+<li>Producer tax incidence: <strong>$28.89</strong> (<span class="math inline">\((8 - 6.33) \times 17.33\)</span>)</li>
+<li>Percent of tax borne by consumers: <strong>67%</strong> (<span class="math inline">\(57.78 / 86.67\)</span>)</li>
+<li>Percent of tax borne by producers: <strong>33%</strong> (<span class="math inline">\(28.89 / 86.67\)</span>)</li>
+</ul>
+</div>
+<div id="elasticity-and-tax-burdens" class="section level2">
+<h2>Elasticity and tax burdens</h2>
+<p>The burden of taxes (and the size of deadweight loss) depends on how elastic supply and demand are. Those who are most able to escape taxes (i.e. those who are most elastic) will avoid them, leaving the burden of taxes to the other more inelastic party. Here are a few different examples of taxes imposed on producers and consumers with varying elasticities:</p>
+<div id="elastic-demand" class="section level3">
+<h3>Elastic demand</h3>
+<p>Here, demand is highly elastic—as the price changes, people change their consumption of the good quickly (i.e. increasing the price makes people jump away from it). Because of this, the burden of the tax falls on the producers, who can’t escape the tax. The tax also causes a lot of DWL because of the high elasticity.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{S} &amp;: P = 2 + 0.25Q \\
+\text{D} &amp;: P = 10 - 0.05Q \\
+\text{S}_\text{tax} &amp;: P = 2 + 0.25Q + 5
+\end{aligned}
+\]</span></p>
+<p><img src="/resource/supply-demand_files/figure-html/unnamed-chunk-4-1.png" width="1152" /></p>
+<ul>
+<li>Pre-tax quantity: <strong>26.67</strong></li>
+<li>Pre-tax price: <strong>$8.67</strong></li>
+<li>Pre-tax consumer surplus: <strong>$17.78</strong> (<span class="math inline">\(1/2 \times 26.67 \times 1.33\)</span>)</li>
+<li>Pre-tax producer surplus: <strong>$88.89</strong> (<span class="math inline">\(1/2 \times 26.67 \times 6.67\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Post-tax quantity: <strong>10</strong></li>
+<li>Post-tax price: <strong>$9.5</strong></li>
+<li>Post-tax consumer surplus: <strong>$2.5</strong> (<span class="math inline">\(1/2 \times 10 \times 0.5\)</span>)</li>
+<li>Post-tax producer surplus: <strong>$12.5</strong> (<span class="math inline">\(1/2 \times 10 \times 2.5\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Deadweight loss: <strong>$41.67</strong> (<span class="math inline">\(1/2 \times 16.67 \times 5\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Total tax incidence (revenue raised): <strong>$50</strong> (<span class="math inline">\((9.5 - 4.5) \times 10\)</span>)</li>
+<li>Consumer tax incidence: <strong>$8.33</strong> (<span class="math inline">\((9.5 - 8.67) \times 10\)</span>)</li>
+<li>Producer tax incidence: <strong>$41.67</strong> (<span class="math inline">\((8.67 - 4.5) \times 10\)</span>)</li>
+<li>Percent of tax borne by consumers: <strong>17%</strong> (<span class="math inline">\(8.33 / 50\)</span>)</li>
+<li>Percent of tax borne by producers: <strong>83%</strong> (<span class="math inline">\(41.67 / 50\)</span>)</li>
+</ul>
+</div>
+<div id="inelastic-demand" class="section level3">
+<h3>Inelastic demand</h3>
+<p>Here, demand is highly inelastic—as the price changes, the quantity doesn’t change a lot (i.e. increasing the price makes only a few people jump away, and the people who keep buying it have to suck up the higher price). Because of this, the burden of the tax falls on the consumers, who can’t escape the tax. The tax also causes smaller DWL because of the low elasticity.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{S} &amp;: P = 2 + 0.25Q \\
+\text{D} &amp;: P = 20 - 2Q \\
+\text{S}_\text{tax} &amp;: P = 2 + 0.25Q + 5
+\end{aligned}
+\]</span></p>
+<p><img src="/resource/supply-demand_files/figure-html/unnamed-chunk-6-1.png" width="1152" /></p>
+<ul>
+<li>Pre-tax quantity: <strong>8</strong></li>
+<li>Pre-tax price: <strong>$4</strong></li>
+<li>Pre-tax consumer surplus: <strong>$64</strong> (<span class="math inline">\(1/2 \times 8 \times 16\)</span>)</li>
+<li>Pre-tax producer surplus: <strong>$8</strong> (<span class="math inline">\(1/2 \times 8 \times 2\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Post-tax quantity: <strong>5.78</strong></li>
+<li>Post-tax price: <strong>$8.44</strong></li>
+<li>Post-tax consumer surplus: <strong>$33.38</strong> (<span class="math inline">\(1/2 \times 5.78 \times 11.56\)</span>)</li>
+<li>Post-tax producer surplus: <strong>$4.17</strong> (<span class="math inline">\(1/2 \times 5.78 \times 1.44\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Deadweight loss: <strong>$5.56</strong> (<span class="math inline">\(1/2 \times 2.22 \times 5\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Total tax incidence (revenue raised): <strong>$28.89</strong> (<span class="math inline">\((8.44 - 3.44) \times 5.78\)</span>)</li>
+<li>Consumer tax incidence: <strong>$25.68</strong> (<span class="math inline">\((8.44 - 4) \times 5.78\)</span>)</li>
+<li>Producer tax incidence: <strong>$3.21</strong> (<span class="math inline">\((4 - 3.44) \times 5.78\)</span>)</li>
+<li>Percent of tax borne by consumers: <strong>89%</strong> (<span class="math inline">\(25.68 / 28.89\)</span>)</li>
+<li>Percent of tax borne by producers: <strong>11%</strong> (<span class="math inline">\(3.21 / 28.89\)</span>)</li>
+</ul>
+</div>
+<div id="elastic-supply" class="section level3">
+<h3>Elastic supply</h3>
+<p>Here, supply is highly elastic—as the price changes, the quantity produced changes a lot (i.e. increasing a tax on books would make Amazon redirect its efforts to music, video, or web servers and wouldn’t hurt the company that much). Because of this, the burden of the tax falls on the consumers, since the company escapes the tax easily. The tax also causes a lot of DWL because of the high elasticity.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{S} &amp;: P = 2 + 0.05Q \\
+\text{D} &amp;: P = 20 - 0.5Q \\
+\text{S}_\text{tax} &amp;: P = 2 + 0.05Q + 5
+\end{aligned}
+\]</span></p>
+<p><img src="/resource/supply-demand_files/figure-html/unnamed-chunk-8-1.png" width="1152" /></p>
+<ul>
+<li>Pre-tax quantity: <strong>32.73</strong></li>
+<li>Pre-tax price: <strong>$3.64</strong></li>
+<li>Pre-tax consumer surplus: <strong>$267.77</strong> (<span class="math inline">\(1/2 \times 32.73 \times 16.36\)</span>)</li>
+<li>Pre-tax producer surplus: <strong>$26.78</strong> (<span class="math inline">\(1/2 \times 32.73 \times 1.64\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Post-tax quantity: <strong>23.64</strong></li>
+<li>Post-tax price: <strong>$8.18</strong></li>
+<li>Post-tax consumer surplus: <strong>$139.67</strong> (<span class="math inline">\(1/2 \times 23.64 \times 11.82\)</span>)</li>
+<li>Post-tax producer surplus: <strong>$13.97</strong> (<span class="math inline">\(1/2 \times 23.64 \times 1.18\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Deadweight loss: <strong>$22.73</strong> (<span class="math inline">\(1/2 \times 9.09 \times 5\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Total tax incidence (revenue raised): <strong>$118.18</strong> (<span class="math inline">\((8.18 - 3.18) \times 23.64\)</span>)</li>
+<li>Consumer tax incidence: <strong>$107.44</strong> (<span class="math inline">\((8.18 - 3.64) \times 23.64\)</span>)</li>
+<li>Producer tax incidence: <strong>$10.74</strong> (<span class="math inline">\((3.64 - 3.18) \times 23.64\)</span>)</li>
+<li>Percent of tax borne by consumers: <strong>91%</strong> (<span class="math inline">\(107.44 / 118.18\)</span>)</li>
+<li>Percent of tax borne by producers: <strong>9%</strong> (<span class="math inline">\(10.74 / 118.18\)</span>)</li>
+</ul>
+</div>
+<div id="inelastic-supply" class="section level3">
+<h3>Inelastic supply</h3>
+<p>Here, supply is highly inelastic—as the price changes, the quantity produced changes a little (i.e. increasing a tax on books would put strain on a small family-owned bookstore that only sold books, since they’d have no other alternative things to produce). Because of this, the burden of the tax falls on the producers, since the company can’t escape the tax by doing other things.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{S} &amp;: P = 2 + 1.5Q \\
+\text{D} &amp;: P = 20 - 0.5Q \\
+\text{S}_\text{tax} &amp;: P = 2 + 1.5Q + 5
+\end{aligned}
+\]</span></p>
+<p><img src="/resource/supply-demand_files/figure-html/unnamed-chunk-10-1.png" width="1152" /></p>
+<ul>
+<li>Pre-tax quantity: <strong>9</strong></li>
+<li>Pre-tax price: <strong>$15.5</strong></li>
+<li>Pre-tax consumer surplus: <strong>$20.25</strong> (<span class="math inline">\(1/2 \times 9 \times 4.5\)</span>)</li>
+<li>Pre-tax producer surplus: <strong>$60.75</strong> (<span class="math inline">\(1/2 \times 9 \times 13.5\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Post-tax quantity: <strong>6.5</strong></li>
+<li>Post-tax price: <strong>$16.75</strong></li>
+<li>Post-tax consumer surplus: <strong>$10.56</strong> (<span class="math inline">\(1/2 \times 6.5 \times 3.25\)</span>)</li>
+<li>Post-tax producer surplus: <strong>$31.69</strong> (<span class="math inline">\(1/2 \times 6.5 \times 9.75\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Deadweight loss: <strong>$6.25</strong> (<span class="math inline">\(1/2 \times 2.5 \times 5\)</span>)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Total tax incidence (revenue raised): <strong>$32.5</strong> (<span class="math inline">\((16.75 - 11.75) \times 6.5\)</span>)</li>
+<li>Consumer tax incidence: <strong>$8.12</strong> (<span class="math inline">\((16.75 - 15.5) \times 6.5\)</span>)</li>
+<li>Producer tax incidence: <strong>$24.38</strong> (<span class="math inline">\((15.5 - 11.75) \times 6.5\)</span>)</li>
+<li>Percent of tax borne by consumers: <strong>25%</strong> (<span class="math inline">\(8.12 / 32.5\)</span>)</li>
+<li>Percent of tax borne by producers: <strong>75%</strong> (<span class="math inline">\(24.38 / 32.5\)</span>)</li>
+</ul>
+</div>
+</div>

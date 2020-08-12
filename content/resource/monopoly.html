@@ -1,0 +1,90 @@
+---
+title: Monopolies
+output:
+  blogdown::html_page:
+    toc: true
+menu:
+  resource:
+    parent: Guides
+type: docs
+weight: 8
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>The most important lesson to remember with monopolies is that monopolist firms will <strong>underproduce</strong> and <strong>overcharge</strong>—Q will be lower and P will be higher than what should happen if the market is in equilibrium.</p>
+<p>As with profit maximization and supply and demand, there are a ton of other resources online that you can references for additional help. <a href="https://www.khanacademy.org/economics-finance-domain/ap-microeconomics/imperfect-competition#ap-monopolies-tutorial">Khan Academy’s monopoly unit is especially useful and easy to follow</a>.</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uSJzdXzYyvQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<p><br />
+</p>
+<p>In this example, let’s assume that the demand for some product is:</p>
+<p><span class="math display">\[
+D: P = -Q + 40
+\]</span></p>
+<p>A single firm that is a monopolist has the following total cost function:</p>
+<p><span class="math display">\[
+TC: P = Q^2 + 140
+\]</span></p>
+<p>Using calculus, we can find the marginal cost function by taking the first derivative:</p>
+<p><span class="math display">\[
+MC: P = 2Q
+\]</span></p>
+<p>If this firm <em>isn’t</em> a monopolist, and the marginal cost here represented the supply of the whole market, we’d have this market equilibrium:</p>
+<p><img src="/resource/monopoly_files/figure-html/regular-equilibrium-1.png" width="672" /></p>
+<p>At this equilibrium, the best quantity is 13.33, and the best price is $26.67.</p>
+<p>However, because this firm is a monopolist, it doesn’t have to take the prevailing price out in society. Instead, it can set the price to whatever maximizes its own profit. The formula for maximizing profit is <span class="math inline">\(MR = MC\)</span>, which means we need to find the formula for both marginal revenue and marginal cost. We already know the formula for marginal cost—that’s the blue line in the graph above:</p>
+<p><span class="math display">\[
+MC: P = 2Q
+\]</span></p>
+<p>We don’t have the formula for marginal revenue, but we can figure it out with some tricky algebra moves. Remember that the general formula for total revenue is <span class="math inline">\(TR = PQ\)</span>, or the price × the quantity of stuff sold. We already know the price of things demanded—that’s the demand curve. If we substitute the demand curve formula into the TR formula in place of P, we can find the formula for total revenue:</p>
+<p><span class="math display">\[
+\begin{aligned}
+TR &amp;= PQ \\
+&amp;= (-Q + 40)Q \\
+&amp;= -Q^2 + 40Q
+\end{aligned}
+\]</span></p>
+<p>Total revenue is thus <span class="math inline">\(Q^2 + 40Q\)</span>. If we find the first derivative of that, we’ll have the marginal revenue:</p>
+<p><span class="math display">\[
+MR = -2Q + 40
+\]</span></p>
+<p>Phew. Now we have equations for marginal cost and for marginal revenue, so we can set them equal to each other and find where they cross using algebra:</p>
+<p><span class="math display">\[
+\begin{aligned}
+MR &amp;= MC \\
+-2Q + 40 &amp;= 2Q \\
+40 &amp;= 4Q \\
+10 &amp;= Q
+\end{aligned}
+\]</span></p>
+<p>The ideal quantity to maximize profits is thus 10. We can see this in a graph, along with the ideal price (this is point B):</p>
+<p><img src="/resource/monopoly_files/figure-html/monopoly-equilibrium-1.png" width="672" /></p>
+<p>We can see that there’s a reduction in quantity. They should be producing 13.33 units, but now they’re only making 10. The price for this new lower quantity is lower too, but there’s now a problem! Based on the demand curve, society is willing to pay up to <span>$30</span> per product, since only 10 are being made. This means that even though the firm should only charge <span>$20</span>, given where MC and MR cross, it can raise the price and charge <span>$30</span> instead, leading to point C. Now there are fewer products being produced <em>and</em> they’re more expensive!</p>
+<p>This sequence of events creates the monopoly triangle:</p>
+<ul>
+<li>According to supply and demand, the firm should produce and sell at <strong>point A</strong></li>
+<li>Because they have market power and are a monopoly, the firm can produce where its marginal revenue = its marginal costs, meaning it should produce at <strong>point B</strong></li>
+<li>Point B leads to a lower Q, and society is willing to pay a higher price for that lower quantity, so the firm will raise the price to <strong>point C</strong>, thus <strong>underproducing and overcharging</strong>.</li>
+</ul>
+<p>This monopoly has a few different consequences beyond lower quantities and higher prices:</p>
+<ul>
+<li>Deadweight loss is created</li>
+<li>Producer surplus grows</li>
+<li>Consumer surplus shrinks</li>
+</ul>
+<p>We can calculate these exact values by using geometry to find the areas of these different rectangles and triangles:</p>
+<p><img src="/resource/monopoly_files/figure-html/monopoly-equilibrium-shaded-1.png" width="672" /></p>
+<ul>
+<li>Deadweight loss: <span class="math inline">\(1/2 \times (13.333-10) \times (30 - 20) = \$16.67\)</span></li>
+<li>Consumer surplus: <span class="math inline">\(1/2 \times 10 \times 10 = \$50\)</span></li>
+<li>Producer surplus:
+<ul>
+<li>Triangle part: <span class="math inline">\(1/2 \times 10 \times 20 = \$100\)</span></li>
+<li>Rectangle part: <span class="math inline">\(10 \times 10 = \$100\)</span></li>
+<li>Total: <span class="math inline">\(\$200\)</span></li>
+</ul></li>
+</ul>

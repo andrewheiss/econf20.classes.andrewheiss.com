@@ -1,0 +1,16 @@
+---
+title: "The firm II"
+linktitle: "8: The firm II"
+date: "2020-10-12"
+start_date: "2020-10-12"
+end_date: "2020-10-16"
+type: docs
+bibliography: "../../static/bib/references.bib"
+csl: "../../static/bib/chicago-fullnote-bibliography-no-bib.csl"
+# slides: "02-slides"
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+This session is a continuation of [session 7](/content/07-content/).

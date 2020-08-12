@@ -1,0 +1,205 @@
+lessons:
+  - title: 'Capitalism, markets, and public policy'
+    header: True
+
+  - title: '<span class="content-title">Capitalism and measurement</span>'
+    session: "Session 1"
+    date: "August 24–28"
+    content: "01-content"
+    bg: 1
+  
+  - title: 'Weekly report 1 due'
+    date: "August 31"
+    assignment: "01-weekly-report"
+    bg: 1
+    bottomborder: True
+
+  - title: '<span class="content-title">Governments and institutions</span>'
+    session: "Session 2"
+    date: "August 31–September 4"
+    content: "02-content"
+    bg: 2
+
+  - title: 'Weekly report 2 due'
+    date: "September 7"
+    assignment: "02-weekly-report"
+    bg: 2
+
+  - title: 'Problem set 1 due'
+    date: "September 7"
+    assignment: "01-problem-set"
+    bg: 2
+    bottomborder: True
+ 
+  - title: '<span class="content-title">Social interactions and economic outcomes</span>'
+    session: "Session 3"
+    date: "September 7–11"
+    content: "03-content"
+    bg: 1
+  
+  - title: 'Weekly report 3 due'
+    date: "September 14"
+    assignment: "03-weekly-report"
+    bg: 1
+    bottomborder: True
+
+  - title: '<span class="content-title">Fairness and efficiency</span>'
+    session: "Session 4"
+    date: "September 14–18"
+    content: "04-content"
+    bg: 2
+
+  - title: 'Weekly report 4 due'
+    date: "September 21"
+    assignment: "04-weekly-report"
+    bg: 2
+
+  - title: 'Problem set 2 due'
+    date: "September 21"
+    assignment: "02-problem-set"
+    bg: 2
+
+  - title: 'Economic models'
+    header: True
+
+  - title: '<span class="content-title">Work, wellbeing, and scarcity</span>'
+    session: "Sessions 5–6"
+    date: "September 21–October 2"
+    content: "05-content"
+    bg: 1
+  
+  - title: 'Weekly report 5 due'
+    date: "September 28"
+    assignment: "05-weekly-report"
+    bg: 1
+
+  - title: 'Weekly report 6 due'
+    date: "October 5"
+    assignment: "06-weekly-report"
+    bg: 1
+
+  - title: 'Problem set 3 due'
+    date: "October 5"
+    assignment: "03-problem-set"
+    bg: 1
+    bottomborder: True
+   
+  - title: '<span class="content-title">The firm</span>'
+    session: "Sessions 7–8"
+    date: "October 5–16"
+    content: "07-content"
+    bg: 2
+
+  - title: 'Weekly report 7 due'
+    date: "October 12"
+    assignment: "07-weekly-report"
+    bg: 2
+
+  - title: 'Weekly report 8 due'
+    date: "October 19"
+    assignment: "08-weekly-report"
+    bg: 2
+
+  - title: 'Problem set 4 due'
+    date: "October 19"
+    assignment: "04-problem-set"
+    bg: 2
+    bottomborder: True
+
+  - title: '<span class="content-title">Firms and markets</span>'
+    session: "Sessions 9–10"
+    date: "October 19–30"
+    content: "09-content"
+    bg: 1
+
+  - title: 'Weekly report 9 due'
+    date: "October 26"
+    assignment: "09-weekly-report"
+    bg: 1
+
+  - title: 'Weekly report 10 due'
+    date: "November 2"
+    assignment: "10-weekly-report"
+    bg: 1
+
+  - title: 'Problem set 5 due'
+    date: "November 2"
+    assignment: "05-problem-set"
+    bg: 1
+  
+  - title: '<i class="fas fa-star"></i> **Exam 1**'
+    date: "October 30–November 7"
+    bg: 3
+
+  - title: 'Market failures and institutions'
+    header: True
+    
+  - title: '<span class="content-title">Institutions, power, and inequality</span>'
+    session: "Session 11"
+    date: "November 2–6"
+    content: "11-content"
+    bg: 2
+
+  - title: 'Weekly report 11 due'
+    date: "November 9"
+    assignment: "11-weekly-report"
+    bg: 2
+    bottomborder: True
+
+  - title: '<span class="content-title">Market failures</span>'
+    session: "Session 12"
+    date: "November 9–13"
+    content: "12-content"
+    bg: 1
+
+  - title: 'Weekly report 12 due'
+    date: "November 16"
+    assignment: "12-weekly-report"
+    bg: 1
+
+  - title: 'Problem set 6 due'
+    date: "November 16"
+    assignment: "06-problem-set"
+    bg: 1
+    bottomborder: True
+
+  - title: '<span class="content-title">When governments go wrong</span>'
+    session: "Session 13"
+    date: "November 16–20"
+    content: "13-content"
+    bg: 2
+
+  - title: 'Weekly report 13 due'
+    date: "November 30"
+    assignment: "13-weekly-report"
+    bg: 2
+    bottomborder: True
+
+  - title: '<span class="content-title">Institutional alternatives</span>'
+    session: "Session 14"
+    date: "November 30–December 4"
+    content: "14-content"
+    bg: 1
+
+  - title: 'Weekly report 14 due'
+    date: "December 7"
+    assignment: "14-weekly-report"
+    bg: 1
+
+  - title: 'Problem set 7 due'
+    date: "December 7"
+    assignment: "07-problem-set"
+    bg: 1
+
+  - title: 'Conclusions'
+    header: True
+
+  - title: '<span class="content-title">Markets, public policy, and public administration</span>'
+    session: "Session 15"
+    date: "December 7"
+    content: "15-content"
+    bg: 1
+
+  - title: '<i class="fas fa-star"></i> **Exam 2**'
+    date: "December 8–15"
+    bg: 3
