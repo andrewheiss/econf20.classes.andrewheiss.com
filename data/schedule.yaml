@@ -90,7 +90,7 @@ lessons:
     content: "07-content"
     bg: 2
   
-  - title: "<strong>Georgia voter registration deadline</strong>"
+  - title: '<a href="https://georgia.gov/register-vote"><strong>Georgia voter registration deadline</strong></a>'
     date: "October 5"
     bg: 3
 
@@ -121,7 +121,7 @@ lessons:
     assignment: "09-weekly-report"
     bg: 1
   
-  - title: "<strong>Deadline to request an absentee ballot</strong><small>(request must be received by this day)</small>"
+  - title: '<a href="https://georgia.gov/vote-absentee-ballot"><strong>Deadline to request an absentee ballot</strong></a> <small>(request must be received by this day)</small>'
     date: "October 30"
     bg: 3
 
