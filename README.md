@@ -1,6 +1,6 @@
-# Microeconomics for Public Policy (PMAP May 2020)
+# Microeconomics for Public Policy (PMAP 8141, Fall 2020)
 
-![Data visualization image](static/img/social-image.png)
+![Data visualization image](static/img/social-image-f20.png)
 
 ## Theme
 
