@@ -80,13 +80,19 @@ Because of the pandemic, we cannot meet in person. I can meet you online via Web
 
 ### Learning during a pandemic
 
-Life absolutely sucks right now. 
+Life absolutely sucks right now. None of is is really okay. **We're all just pretending.**
 
 You most likely know people who have lost their jobs, have tested positive for COVID-19, have been hospitalized, or perhaps have even died. You all have increased (or possibly decreased) work responsibilities and increased family care responsibilities—you might be caring for extra people (young and/or old!) right now, and you are likely facing uncertain job prospects (or have been laid off!). 
 
 **I'm fully committed to making sure that you learn everything you were hoping to learn from this class!** I will make whatever accommodations I can to help you finish your exercises, do well on your projects, and learn and understand the class material. Under ordinary conditions, I am flexible and lenient with grading and course expectations when students face difficult challenges. Under pandemic conditions, that flexibility and leniency is intensified.
 
-If you feel like you're behind or not understanding everything, **do not suffer in silence!** Talk to me! *Please* sign up for a time to meet with me during student hours at <https://calendly.com/andrewheiss/meeting/>. I'm also available through e-mail and Slack. This is the only Slack account where I've enabled notifications!
+If you tell me you're having trouble, I will not judge you or think less of you. I hope you'll extend me the same grace. 
+
+You *never* owe me personal information about your health (mental or physical). You are *always* welcome to talk to me about things that you're going through, though. If I can't help you, I usually know somebody who can.
+
+If you need extra help, or if you need more time with something, or if you feel like you're behind or not understanding everything, **do not suffer in silence!** Talk to me! I will work with you. **I promise.** 
+
+*Please* sign up for a time to meet with me during student hours at <https://calendly.com/andrewheiss/meeting/>. I'm also available through e-mail and Slack. I've enabled notifications on my Slack account, so I'll see your messages quickly!
 
 I want you to learn lots of things from this class, but I primarily want you to stay healthy, balanced, and grounded during this crisis.
 
@@ -135,7 +141,7 @@ You can find descriptions for all the assignments on the [assignments page](/ass
 ```{r assignments-grades, include=FALSE}
 assignments <- tribble(
   ~Points,  ~Assignment,
-  20 * 7  , "Weekly reports (20 × 7)",
+  10 * 14  , "Weekly reports (10 × 14)",
   20 * 7  , "Problem sets (20 × 7)",
   150     , "Exam 1",
   150     , "Exam 2"
