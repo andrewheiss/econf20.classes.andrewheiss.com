@@ -55,7 +55,7 @@ q_ideal <- uniroot(function(x) demand(x) - supply(x), c(0, 100))
 
 demand_firm <- function(Q) demand(q_ideal$root)
 
-ggplot(mapping = aes(x = 0:40)) +
+ggplot(data = tibble(x = 0:40), aes(x = x)) +
   stat_function(fun = demand, aes(color = "Demand"), size = 1.5) +
   stat_function(fun = supply, aes(color = "Marginal cost"), size = 1.5) +
   geom_vline(xintercept = q_ideal$root, color = "grey50", linetype = "dashed") +
@@ -127,7 +127,7 @@ points_to_add <- tribble(
   q_ideal_competition$root, demand_monopoly(q_ideal_competition$root), "A"
 )
 
-monopoly1 <- ggplot(mapping = aes(x = 0:40)) +
+monopoly1 <- ggplot(data = tibble(x = 0:40), aes(x = x)) +
   stat_function(fun = demand_monopoly, aes(color = "Demand"), size = 1.5) +
   stat_function(fun = mc, aes(color = "Marginal cost"), size = 1.5) +
   stat_function(fun = mr, aes(color = "Marginal revenue"), size = 1.5) +
@@ -171,17 +171,20 @@ x_q_monopoly <- seq(0, q_ideal$root, 0.01)
 x_q_competition <- seq(q_ideal$root, q_ideal_competition$root, 0.01)
 
 monopoly1 + 
-  geom_ribbon(aes(x = x_q_monopoly, 
+  geom_ribbon(data = tibble(x = x_q_monopoly),
+              aes(x = x,
                   ymin = demand_monopoly(q_ideal$root),
                   ymax = demand_monopoly(x_q_monopoly),
                   fill = "Consumer surplus"),
               alpha = 0.3) +
-  geom_ribbon(aes(x = x_q_monopoly,
+  geom_ribbon(data = tibble(x = x_q_monopoly),
+              aes(x = x,
                   ymin = mc(x_q_monopoly), 
                   ymax = demand_monopoly(q_ideal$root),
                   fill = "Producer surplus"),
               alpha = 0.3) +
-  geom_ribbon(aes(x = x_q_competition,
+  geom_ribbon(data = tibble(x = x_q_competition),
+              aes(x = x,
                   ymin = mc(x_q_competition), 
                   ymax = demand_monopoly(x_q_competition),
                   fill = "Deadweight loss"),

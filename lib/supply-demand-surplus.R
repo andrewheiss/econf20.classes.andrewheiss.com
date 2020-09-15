@@ -74,24 +74,29 @@ tax_graph <- function(demand_fun, supply_fun, supply_tax, title, shaded = FALSE,
   )
   
   if (shaded) {
-    base_plot <- ggplot(mapping = aes(x = 0:max_x)) +
-      geom_ribbon(aes(x = x_q_tax, 
+    base_plot <- ggplot(data = tibble(x = 0:max_x), mapping = aes(x = x)) +
+      geom_ribbon(data = tibble(x = x_q_tax),
+                  aes(x = x, 
                       ymin = demand_fun(equilibrium_tax), ymax = demand_fun(x_q_tax)),
                   alpha = 0.3, fill = nord_green) +
-      geom_ribbon(aes(x = x_q_tax, 
+      geom_ribbon(data = tibble(x = x_q_tax),
+                  aes(x = x, 
                       ymin = supply_fun(x_q_tax), ymax = supply_fun(equilibrium_tax)),
                   alpha = 0.3, fill = nord_lt_blue) +
-      geom_ribbon(aes(x = x_q_dwl, 
+      geom_ribbon(data = tibble(x = x_q_dwl),
+                  aes(x = x,
                       ymin = supply_fun(x_q_dwl), ymax = demand_fun(x_q_dwl)),
                   alpha = 0.3, fill = nord_purple) +
-      geom_ribbon(aes(x = x_q_tax, 
+      geom_ribbon(data = tibble(x = x_q_tax),
+                  aes(x = x, 
                       ymin = demand_fun(equilibrium), ymax = demand_fun(equilibrium_tax)),
                   alpha = 0.3, fill = nord_yellow) +
-      geom_ribbon(aes(x = x_q_tax, 
+      geom_ribbon(data = tibble(x = x_q_tax),
+                  aes(x = x, 
                       ymin = supply_fun(equilibrium), ymax = supply_fun(equilibrium_tax)),
                   alpha = 0.3, fill = nord_yellow)
   } else {
-    base_plot <- ggplot(mapping = aes(x = 0:max_x))
+    base_plot <- ggplot(data = tibble(x = 0:max_x), mapping = aes(x = x))
   }
   
   full_plot <- base_plot +

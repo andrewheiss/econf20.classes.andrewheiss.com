@@ -367,7 +367,8 @@ labels_vertical <- tribble(
 )
 
 plot_demand <- ggplot() +
-  stat_function(fun = price_fun, aes(x = 0:10), size = 1.5, color = nord_orange) +
+  stat_function(data = tibble(x = 0:10), fun = price_fun, aes(x = x), 
+                size = 1.5, color = nord_orange) +
   geom_label(data = labels_horizontal, aes(x = x, y = y, label = label)) +
   geom_vline(xintercept = q_optimum_tr, size = 0.5, color = "grey50") +
   scale_x_continuous(expand = c(0, 0), breaks = seq(0, 10, 2)) +
