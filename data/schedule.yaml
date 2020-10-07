@@ -108,6 +108,10 @@ lessons:
     date: "October 19"
     assignment: "04-problem-set"
     bg: 2
+
+  - title: '<i class="fas fa-star"></i> **Exam 1**'
+    date: "October 23–31"
+    bg: 3
     bottomborder: True
 
   - title: '<span class="content-title">Firms and markets</span>'
@@ -134,10 +138,6 @@ lessons:
     date: "November 2"
     assignment: "05-problem-set"
     bg: 1
-  
-  - title: '<i class="fas fa-star"></i> **Exam 1**'
-    date: "October 30–November 7"
-    bg: 3
 
   - title: 'Market failures and institutions'
     header: True
