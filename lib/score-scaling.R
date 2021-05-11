@@ -24,9 +24,9 @@ grades <- tribble(
 midterm_1_raw <- read_csv(here("private", "exam1.csv"))
 
 midterm_1_adjusted <- midterm_1_raw %>% 
-  mutate(pct = Score / 150) %>% 
+  mutate(pct = Score / 125) %>% 
   mutate(adjusted = Score + 5,
-         pct_new = adjusted / 150) %>% 
+         pct_new = adjusted / 125) %>% 
   fuzzy_left_join(grades, by = c("pct_new" = "lower", "pct_new" = "upper"),
                   match_fun = list(`>=`, `<`))
 
